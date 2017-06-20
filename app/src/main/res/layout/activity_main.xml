@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,12 +8,41 @@
     tools:context="com.example.bubbles.rembesha.MainActivity">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="The make-up search engine"
+        android:textSize="30sp"
+        />
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:hint="Enter a brand e.g maybelline"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/brand"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter a type e.g blush"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/product_type"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter a category e.g lipstick"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/product_category"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/searchButton"/>
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

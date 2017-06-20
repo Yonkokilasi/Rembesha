@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "956543601305",
+    "firebase_url": "https://rembesha-ec502.firebaseio.com",
+    "project_id": "rembesha-ec502",
+    "storage_bucket": "rembesha-ec502.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956543601305:android:04492291ba85f42c",
+        "android_client_info": {
+          "package_name": "com.example.bubbles.rembesha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956543601305-n8sljseuj080vfh3bnk5kci1uns9db6k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bubbles.rembesha",
+            "certificate_hash": "0046f689d376230fab4ee0a0c6e85a8d0f452a7a"
+          }
+        },
+        {
+          "client_id": "956543601305-1kkekcbaro5r894dg2hv73dp6vru1ghg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0P_3zG5RtGq3eItokEhRjB0wiwVmx1bs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956543601305-1kkekcbaro5r894dg2hv73dp6vru1ghg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

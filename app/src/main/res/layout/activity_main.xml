@@ -5,37 +5,48 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bubbles.rembesha.MainActivity">
+    tools:context="com.example.bubbles.rembesha.MainActivity"
+    android:background="@drawable/landing">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="The make-up search engine"
         android:textSize="30sp"
+        android:textColor="@color/badge"
         />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Enter a brand e.g maybelline"
-        android:layout_marginTop="130dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="70dp"
         android:id="@+id/brand"
+        android:textColor="@color/badge"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
         />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enter a type e.g blush"
-        android:layout_marginTop="190dp"
-        android:layout_marginLeft="50dp"
+        android:hint="Enter a type e.g eyeliner"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="70dp"
         android:id="@+id/product_type"
+        android:textColor="@color/badge"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
         />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Enter a category e.g lipstick"
-        android:layout_marginTop="250dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="70dp"
         android:id="@+id/product_category"
+        android:textColor="@color/badge"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
         />
     <Button
         android:layout_width="match_parent"
@@ -43,6 +54,7 @@
         android:text="Search"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="30dp"
-        android:id="@+id/searchButton"/>
+        android:id="@+id/searchButton"
+        android:background="@color/badge"/>
 
 </RelativeLayout>

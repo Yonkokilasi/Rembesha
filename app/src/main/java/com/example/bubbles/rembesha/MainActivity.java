@@ -35,13 +35,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intent.putExtra("brand",brand);
             intent.putExtra("category",category);
             intent.putExtra("type",type);
-            if (category.equals("")) {
-                mType.setError("Please enter a category");
-                return;
-            } else {
                 Toast.makeText(MainActivity.this,"Looking for your makeup.",Toast.LENGTH_LONG).show();
                 startActivity(intent);
-            }
         }
     }
 }

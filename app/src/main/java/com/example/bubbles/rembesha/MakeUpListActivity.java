@@ -7,6 +7,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
+import com.example.bubbles.rembesha.adapters.MakeUpListAdapter;
+import com.example.bubbles.rembesha.service.MakeupService;
+
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -36,7 +39,7 @@ public class MakeUpListActivity extends AppCompatActivity {
         getMakeUp(brand,category,type);
     }
     private void getMakeUp(final String brand, final String category, final String type) {
-        final  MakeupService makeupService = new MakeupService();
+        final MakeupService makeupService = new MakeupService();
         MakeupService.findMakeUp(brand, category, type, new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {

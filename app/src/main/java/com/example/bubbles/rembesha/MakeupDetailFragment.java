@@ -63,12 +63,12 @@ public static MakeupDetailFragment newInstance(MakeUp makeUp) {
         Picasso.with(view.getContext()).load(mMakeup.getImageUrl()).into(mImageView);
         mNameTextView.setText(mMakeup.getName());
         mBrandTextView.setText("By "+ mMakeup.getBrand());
-        mPriceView.setText(mMakeup.getPrice()+"$");
+        mPriceView.setText("Costs: "+mMakeup.getPrice()+"$");
         mRating.setText(mMakeup.getRating()+"/5.0");
-        mColorTextView.setText("Colors available"+android.text.TextUtils.join(",",mMakeup.getColors()));
+        mColorTextView.setText("Colors available are : "+android.text.TextUtils.join(",",mMakeup.getColors()));
         mWebsiteView.setOnClickListener(this);
         mSaveMakeUp.setOnClickListener(this);
-        mCategoryView.setText("Category"+ mMakeup.getCategory());
+        mCategoryView.setText("Category: "+ mMakeup.getCategory());
         mDescriptionTextView.setText(mMakeup.getDescription());
         mSaveMakeUp.setOnClickListener(this);
         return view;

@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.bubbles.rembesha.ui.BeginingActivity;
 import com.example.bubbles.rembesha.ui.MakeUpListActivity;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Bind(R.id.searchButton) Button mSearchButton;
     @Bind(R.id.product_type) EditText mType;
     private DatabaseReference mSearchedBrandReference;
+    @Bind(R.id.saveButton) Button mSaved;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         mSearchButton.setOnClickListener(this);
-
-       
-        
+        mSaved.setOnClickListener(this);
     }
 
     @Override
@@ -51,6 +51,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 
             saveBrandToFirebase(brand);
                 startActivity(intent);
+        }
+        if (v == mSaved) {
+            Intent intent = new Intent(MainActivity.this,SavedMakeupListActivity.class);
+            startActivity(intent);
         }
     }
 
@@ -78,6 +82,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         FirebaseAuth.getInstance().signOut();
         Intent intent = new Intent(MainActivity.this,BeginingActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        Toast.makeText(MainActivity.this,"You have been successfully logged out",Toast.LENGTH_SHORT);
         startActivity(intent);
         finish();
     }

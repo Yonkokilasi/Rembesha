@@ -13,43 +13,48 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.LoginActivity"
-            android:theme="@style/NoActionBar">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+            android:theme="@style/NoActionBar"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".ui.CreateAccountActivity"
-            android:theme="@style/NoActionBar" />
+            android:theme="@style/NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.MakeUpListActivity"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.bubbles.rembesha.MainActivity" />
         </activity>
         <activity
             android:name=".ui.MakeupDetailActivity"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.bubbles.rembesha.MainActivity" />
         </activity>
         <activity
             android:name=".ui.BeginingActivity"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SavedMakeupListActivity"></activity>
+        <activity android:name=".SavedMakeupListActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>

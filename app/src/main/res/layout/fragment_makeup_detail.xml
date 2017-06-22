@@ -18,15 +18,15 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
+            android:paddingBottom="8dp"
             android:paddingLeft="20dp"
             android:paddingRight="10dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name"
-                android:textColor="@color/colorPrimary"
-                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:id="@+id/nameTextView"/>
             <TextView
@@ -35,23 +35,28 @@
                 android:id="@+id/brandTextView"
                 android:text="Brand"
                 android:textStyle="italic"
-                android:layout_margin="20dp"
-                android:layout_alignParentLeft="true"/>
+                android:textColor="@color/black"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="45dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/ratingTextView"
                 android:textStyle="italic"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:layout_alignParentRight="true"
-                android:text="Rating"/>
+                android:text="Rating"
+                android:textColor="@color/black"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/categoryTextView"
                 android:textStyle="italic"
-                android:layout_marginTop="15dp"
-                android:layout_alignParentRight="true"/>
+                android:text="Category"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="40dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"/>
 
         </RelativeLayout>
         <RelativeLayout
@@ -64,7 +69,8 @@
                 android:layout_alignParentStart="true"
                 android:background="@color/badge"
                 android:orientation="vertical"
-                android:paddingLeft="20dp">
+                android:paddingLeft="20dp"
+                android:layout_marginTop="-0dp">
                 <Button
                     android:layout_width="100dp"
                     android:layout_height="50dp"
@@ -88,13 +94,14 @@
                     android:id="@+id/websiteLink"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginBottom="0dp"
                     android:drawablePadding="4dp"
                     android:gravity="center"
                     android:text="Click to buy"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:layout_marginTop="40dp"
+                    android:drawableLeft="@drawable/ic_add_shopping_cart"
+                    android:layout_marginTop="30dp"
                     android:paddingLeft="0dp"/>
             </LinearLayout>
         </RelativeLayout>
@@ -113,13 +120,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/colorTextView"
-                    android:padding="5dp"
-                    android:text="Colors"/>
+                    android:padding="4dp"
+                    android:text="Colors"
+                    android:layout_marginTop="0dp"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/descriptionTextView"
-                    android:padding="5dp"
+                    android:padding="4dp"
                     android:text="Desciption"/>
 
             </LinearLayout>

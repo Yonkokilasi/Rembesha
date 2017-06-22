@@ -20,6 +20,8 @@ public class MakeUp {
      String description;
    String productType;
     String category;
+     String index;
+    private String pushId;
 
     public MakeUp(String name, double price, String imageUrl, String websiteLink, String brand, double rating, ArrayList<String> colors, String description, String productType,String category) {
         this.name = name;
@@ -32,6 +34,7 @@ public class MakeUp {
         this.description = description;
         this.productType = productType;
         this.category = category;
+        this.index = "not_specified";
     }
 
     public  MakeUp() {
@@ -75,5 +78,20 @@ public class MakeUp {
     }
     public String getCategory() {
         return category;
+    }
+    public String getIndex() {
+        return index;
+    }
+    public String getPushId() {
+        return pushId;
+    }
+
+    public void setIndex(String index) {
+        this.index = index;
+    }
+
+
+    public void setPushId(String pushId) {
+        this.pushId = pushId;
     }
 }

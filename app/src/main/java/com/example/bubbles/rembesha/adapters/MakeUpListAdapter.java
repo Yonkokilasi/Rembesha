@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.bubbles.rembesha.MakeUp;
-import com.example.bubbles.rembesha.MakeupDetailActivity;
+import com.example.bubbles.rembesha.ui.MakeupDetailActivity;
 import com.example.bubbles.rembesha.R;
 import com.squareup.picasso.Picasso;
 

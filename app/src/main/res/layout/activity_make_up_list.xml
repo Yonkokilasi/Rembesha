@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bubbles.rembesha.MakeUpListActivity"
+    tools:context="com.example.bubbles.rembesha.ui.MakeUpListActivity"
     android:paddingBottom="10dp"
     android:paddingLeft="12dp"
     android:paddingRight="12dp"

@@ -1,4 +1,4 @@
-package com.example.bubbles.rembesha;
+package com.example.bubbles.rembesha.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
+import com.example.bubbles.rembesha.MakeUp;
+import com.example.bubbles.rembesha.R;
 import com.example.bubbles.rembesha.adapters.MakeUpListAdapter;
 import com.example.bubbles.rembesha.service.MakeupService;
 

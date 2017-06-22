@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bubbles.rembesha.CreateAccountActivity"
+    tools:context="com.example.bubbles.rembesha.ui.CreateAccountActivity"
     android:background="@color/red">
 
     <LinearLayout
@@ -80,11 +80,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/createUserButton"
             android:padding="10dp"
-            android:text="Start your journey"
-            android:background="@color/badge"
+            android:text="Sign Up"
+            android:background="@color/white"
             android:layout_marginTop="13dp"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/badge"/>
+            android:textColor="@color/red"
+            android:textSize="20sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

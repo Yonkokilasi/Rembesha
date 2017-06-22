@@ -13,6 +13,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import org.parceler.Parcel;
@@ -28,7 +32,7 @@ import butterknife.ButterKnife;
 public class MakeupDetailFragment extends Fragment implements View.OnClickListener {
     @Bind(R.id.nameTextView) TextView mNameTextView;
     @Bind(R.id.brandTextView) TextView mBrandTextView;
-    @Bind(R.id.imageView) ImageView mImageView;
+    @Bind(R.id.productImageView) ImageView mImageView;
     @Bind(R.id.colorTextView) TextView mColorTextView;
     @Bind(R.id.descriptionTextView) TextView mDescriptionTextView;
     @Bind(R.id.priceView) TextView mPriceView;
@@ -37,6 +41,7 @@ public class MakeupDetailFragment extends Fragment implements View.OnClickListen
     @Bind(R.id.categoryTextView) TextView mCategoryView;
     private MakeUp mMakeup;
     @Bind(R.id.saveMakeup) Button mSaveMakeUp;
+
 
 public static MakeupDetailFragment newInstance(MakeUp makeUp) {
     MakeupDetailFragment makeupDetailFragment = new MakeupDetailFragment();
@@ -54,6 +59,7 @@ public static MakeupDetailFragment newInstance(MakeUp makeUp) {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_makeup_detail,container,false);
         ButterKnife.bind(this,view);
+
         Picasso.with(view.getContext()).load(mMakeup.getImageUrl()).into(mImageView);
         mNameTextView.setText(mMakeup.getName());
         mBrandTextView.setText("By "+ mMakeup.getBrand());
@@ -64,7 +70,9 @@ public static MakeupDetailFragment newInstance(MakeUp makeUp) {
         mSaveMakeUp.setOnClickListener(this);
         mCategoryView.setText("Category"+ mMakeup.getCategory());
         mDescriptionTextView.setText(mMakeup.getDescription());
+        mSaveMakeUp.setOnClickListener(this);
         return view;
+
     }
 
 
@@ -73,6 +81,16 @@ public static MakeupDetailFragment newInstance(MakeUp makeUp) {
     if (v == mWebsiteView) {
         Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(mMakeup.getWebsiteLink()));
         startActivity(webIntent);
+    }
+    if (v == mSaveMakeUp) {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        String uid = user.getUid();
+        DatabaseReference makeupReference = FirebaseDatabase.getInstance().getReference(Constants.FIREBASE_CHILD_MAKEUP).child(uid);
+        DatabaseReference pushRef = makeupReference.push();
+        String pushId = pushRef.getKey();
+        mMakeup.setPushId(pushId);
+        pushRef.setValue(mMakeup);
+        Toast.makeText(getContext(), "Saved", Toast.LENGTH_SHORT).show();
     }
 
 

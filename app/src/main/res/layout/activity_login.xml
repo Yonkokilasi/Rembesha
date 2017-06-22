@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bubbles.rembesha.LoginActivity"
+    tools:context="com.example.bubbles.rembesha.ui.LoginActivity"
     android:background="@color/red">
 
 
@@ -47,9 +47,9 @@
             android:id="@+id/passwordLoginButton"
             android:text="lOGIN"
             android:layout_marginTop="30dp"
-            android:textColor="@color/white"
+            android:textColor="@color/red"
             android:padding="10dp"
-            android:background="@color/badge"
+            android:background="@color/white"
             android:textSize="25sp"/>
         <TextView
             android:layout_width="wrap_content"

@@ -14,17 +14,17 @@
         android:text="The make-up search engine"
         android:textSize="40sp"
         android:paddingLeft="60dp"
-        android:textColor="@color/badge"
+        android:textColor="@color/white"
         android:textStyle="bold"
         />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Enter a brand e.g maybelline"
-        android:layout_marginTop="150dp"
-        android:layout_marginLeft="70dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="50dp"
         android:id="@+id/brand"
-        android:textColor="@color/badge"
+        android:textColor="@color/orange"
         android:textColorHint="@color/black"
         android:textSize="20sp"
         />
@@ -32,8 +32,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Enter a type e.g eyeliner"
-        android:layout_marginTop="220dp"
-        android:layout_marginLeft="70dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="50dp"
         android:id="@+id/product_type"
         android:textColor="@color/badge"
         android:textColorHint="@color/black"
@@ -44,19 +44,20 @@
         android:layout_height="wrap_content"
         android:hint="Enter a category e.g lipstick"
         android:layout_marginTop="290dp"
-        android:layout_marginLeft="70dp"
+        android:layout_marginLeft="50dp"
         android:id="@+id/product_category"
         android:textColor="@color/badge"
         android:textColorHint="@color/black"
         android:textSize="20sp"
         />
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="Search"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="80dp"
         android:id="@+id/searchButton"
-        android:background="@color/badge"/>
+        android:background="@color/white"
+        android:layout_marginLeft="60dp"/>
 
 </RelativeLayout>

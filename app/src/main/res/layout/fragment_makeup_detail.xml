@@ -101,7 +101,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:drawableLeft="@drawable/ic_add_shopping_cart"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     android:paddingLeft="0dp"/>
             </LinearLayout>
         </RelativeLayout>
@@ -115,7 +115,7 @@
                 android:layout_alignParentStart="true"
                 android:background="@color/badge"
                 android:orientation="vertical"
-                android:paddingLeft="20dp">
+                android:paddingLeft="10dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

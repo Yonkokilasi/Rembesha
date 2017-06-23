@@ -25,8 +25,7 @@ public class BeginingActivity extends AppCompatActivity implements View.OnClickL
         mEmail.setOnClickListener(this);
         mSignUp.setOnClickListener(this);
         mGoogle.setOnClickListener(this);
-
-
+        Toast.makeText(BeginingActivity.this,"Rembesha",Toast.LENGTH_LONG).show();
     }
 
     @Override

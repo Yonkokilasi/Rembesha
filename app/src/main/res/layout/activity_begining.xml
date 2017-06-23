@@ -5,32 +5,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.bubbles.rembesha.ui.BeginingActivity"
-    android:background="@drawable/client1">
+    android:background="@color/red">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I came"
+        android:textSize="40sp"
+        android:paddingLeft="50dp"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I saw "
+        android:textSize="40sp"
+        android:paddingLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I Countoured"
+        android:textSize="40sp"
+        android:paddingLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"/>
+    </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="100dp">
+        android:layout_marginTop="90dp">
     <Button
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:text="Login with Google"
         android:id="@+id/googleLogin"
         android:layout_marginLeft="60dp"
-        android:layout_marginTop="70dp"/>
+        android:layout_marginTop="70dp"
+        android:background="@color/white"
+        android:textColor="@color/black"/>
     <Button
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:text="Login with email"
         android:layout_marginTop="140dp"
         android:id="@+id/emailLogin"
-        android:layout_marginLeft="60dp"/>
+        android:layout_marginLeft="60dp"
+        android:background="@color/white"
+        android:textColor="@color/black"/>
     <Button
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:text="Sign Up"
         android:layout_marginTop="210dp"
         android:id="@+id/signupLogin"
-        android:layout_marginLeft="60dp"/>
+        android:layout_marginLeft="60dp"
+        android:background="@color/white"
+        android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surround Yourself with makeup not Negativity"
+            android:textColor="@color/white"
+            android:layout_marginTop="280dp"
+            android:textSize="35sp"
+            android:paddingLeft="50dp"/>
     </RelativeLayout>
 
 

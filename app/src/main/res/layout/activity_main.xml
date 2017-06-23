@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter a brand e.g maybelline"
         android:layout_marginTop="140dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="40dp"
         android:id="@+id/brand"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter a type e.g eyeliner"
         android:layout_marginTop="260dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="40dp"
         android:id="@+id/product_type"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter a category e.g lipstick"
         android:layout_marginTop="200dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="40dp"
         android:id="@+id/product_category"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -55,18 +55,18 @@
         android:layout_height="wrap_content"
         android:text="Search"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="120dp"
         android:id="@+id/searchButton"
         android:background="@color/white"
-        android:layout_marginLeft="60dp"/>
+        android:layout_marginLeft="50dp"/>
     <Button
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="Saved Makeup"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="50dp"
         android:id="@+id/saveButton"
         android:background="@color/white"
-        android:layout_marginLeft="60dp"/>
+        android:layout_marginLeft="50dp"/>
 
 </RelativeLayout>
